@@ -10,16 +10,12 @@ config = ConfigDict(from_attributes=True, populate_by_name=True)
 
 
 def pyd_sqa(
-    db_model: BaseModel, *,
-    config: ConfigDict = config,
-    exclude: List[str] = []
+    db_model: BaseModel, *, config: ConfigDict = config, exclude: List[str] = []
 ) -> BaseModel:
     mapper = inspect(db_model)
     fields = {}
     for attr in mapper.attrs:
-        if (
-            not isinstance(attr, ColumnProperty)
-            or not attr.columns):
+        if not isinstance(attr, ColumnProperty) or not attr.columns:
             continue
         name = attr.key
         if name in exclude:

@@ -10,7 +10,6 @@ from sqlalchemy.orm import Session, relationship, sessionmaker
 from pydantic.config import ConfigDict
 
 
-
 Base = declarative_base()
 
 engine = create_engine("sqlite://", echo=True)
