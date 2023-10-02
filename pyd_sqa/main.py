@@ -23,7 +23,7 @@ def pyd_sqa(
         if name in exclude:
             continue
         column = attr.columns[0]
-        python_type: Optional[Type] = None
+        python_type: Optional[type(column.type)] = None
         if hasattr(column.type, "python_type"):
             python_type = column.type.python_type
         elif hasattr(column.type, "impl") and hasattr(column.type.impl, "python_type"):
