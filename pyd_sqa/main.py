@@ -10,7 +10,7 @@ config = ConfigDict(from_attributes=True, populate_by_name=True)
 
 
 def pyd_sqa(
-    db_model: Type, *, config: type(config) = config, exclude: Container[str] = []
+    db_model: Type, *, config: ConfigDict = config, exclude: Container[str] = []
 ) -> Type[BaseModel]:
     mapper = inspect(db_model)
     fields = {}
@@ -23,7 +23,7 @@ def pyd_sqa(
         if name in exclude:
             continue
         column = attr.columns[0]
-        python_type: Optional[type(column.type)] = None
+        python_type: Optional[Type] = None
         if hasattr(column.type, "python_type"):
             python_type = column.type.python_type
         elif hasattr(column.type, "impl") and hasattr(column.type.impl, "python_type"):
