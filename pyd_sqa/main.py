@@ -1,4 +1,4 @@
-from typing import Container, Optional, Type
+from typing import List, Optional, Type
 
 from pydantic import ConfigDict, BaseModel, create_model
 from sqlalchemy.inspection import inspect
@@ -10,8 +10,10 @@ config = ConfigDict(from_attributes=True, populate_by_name=True)
 
 
 def pyd_sqa(
-    db_model: Type, *, config: ConfigDict = config, exclude: Container[str] = []
-) -> Type[BaseModel]:
+    db_model: BaseModel, *,
+    config: ConfigDict = config,
+    exclude: List[str] = []
+) -> BaseModel:
     mapper = inspect(db_model)
     fields = {}
     for attr in mapper.attrs:
@@ -23,7 +25,7 @@ def pyd_sqa(
         if name in exclude:
             continue
         column = attr.columns[0]
-        python_type: Optional[type] = None
+        python_type = None
         if hasattr(column.type, "python_type"):
             python_type = column.type.python_type
         elif hasattr(column.type, "impl") and hasattr(column.type.impl, "python_type"):
