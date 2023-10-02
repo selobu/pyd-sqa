@@ -11,7 +11,7 @@ Pydantic-SQLAlchemy
     <img src="https://img.shields.io/codecov/c/github/selobu/sqlalchemy-pydantic?color=%2334D058" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/sqlalchemy-pydantic" target="_blank">
-    <img src="https://img.shields.io/pypi/v/sqlalchemy-pydantic?color=%2334D058&label=pypi%20package" alt="Package version">
+    <img src="https://img.shields.io/pypi/v/pyd-sqa?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
 
 Tools to generate Pydantic models from SQLAlchemy models, forked from pydantic-sqlalchemy
