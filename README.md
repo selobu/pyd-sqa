@@ -104,16 +104,3 @@ def test_pyd_sqa():
         ],
     }
 ```
-
-## Release Notes
-
-### Latest Changes
-
-
-### 1.0.0
-
-* ✨ Upgrade dependencies PR [#1](https://github.com/selobu/sqlalchemy-pydantic/pull/32) by [@selobu](https://github.com/selobu).
-
-## License
-
-This project is licensed under the terms of the MIT license.
