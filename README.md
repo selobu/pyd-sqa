@@ -1,4 +1,5 @@
-# Pydantic-SQLAlchemy
+# pyd-sqa
+Pydantic-SQLAlchemy
 
 <a href="https://github.com/selobu/sqlalchemy-pydantic/actions?query=workflow%3ATest" target="_blank">
     <img src="https://github.com/seloby/sqlalchemy-pydantic/workflows/Test/badge.svg" alt="Test">
