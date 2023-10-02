@@ -11,7 +11,7 @@ config = ConfigDict(from_attributes=True, populate_by_name=True)
 
 def pyd_sqa(
     db_model: Type, *, config: ConfigDict = config, exclude: Container[str] = []
-) -> Type[BaseModel]:
+) -> BaseModel:
     mapper = inspect(db_model)
     fields = {}
     for attr in mapper.attrs:
