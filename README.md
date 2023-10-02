@@ -10,7 +10,7 @@ Pydantic-SQLAlchemy
 <a href="https://codecov.io/gh/selobu/sqlalchemy-pydantic" target="_blank">
     <img src="https://img.shields.io/codecov/c/github/selobu/sqlalchemy-pydantic?color=%2334D058" alt="Coverage">
 </a>
-<a href="https://pypi.org/project/pyd-sqa" target="_blank">
+<a href="https://pypi.org/selobu/pyd-sqa" target="_blank">
     <img src="https://img.shields.io/pypi/v/pyd-sqa?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
 
