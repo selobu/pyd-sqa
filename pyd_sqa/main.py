@@ -10,7 +10,9 @@ config = ConfigDict(from_attributes=True, populate_by_name=True)
 
 
 def pyd_sqa(
-    db_model: BaseModel, *, config: ConfigDict = config, exclude: Container[str] = []
+    db_model: BaseModel, *,
+    config: ConfigDict = config,
+    exclude: Container[str] = []
 ) -> BaseModel:
     mapper = inspect(db_model)
     fields = {}
