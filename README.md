@@ -3,7 +3,7 @@
 <a href="https://github.com/selobu/sqlalchemy-pydantic/actions?query=workflow%3ATest" target="_blank">
     <img src="https://github.com/seloby/sqlalchemy-pydantic/workflows/Test/badge.svg" alt="Test">
 </a>
-<a href="https://github.com/selobu/sqlalchemy-pydantic/actions?query=workflow%3APublish" target="_blank">
+<a href="https://github.com/selobu/pyd-sqa/actions?query=workflow%3APublish" target="_blank">
     <img src="https://github.com/selobu/sqlalchemy-pydantic/workflows/Publish/badge.svg" alt="Publish">
 </a>
 <a href="https://codecov.io/gh/selobu/sqlalchemy-pydantic" target="_blank">
