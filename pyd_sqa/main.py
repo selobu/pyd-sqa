@@ -1,4 +1,4 @@
-from typing import Container, Optional, Type
+from typing import List, Optional, Type
 
 from pydantic import ConfigDict, BaseModel, create_model
 from sqlalchemy.inspection import inspect
@@ -12,7 +12,7 @@ config = ConfigDict(from_attributes=True, populate_by_name=True)
 def pyd_sqa(
     db_model: BaseModel, *,
     config: ConfigDict = config,
-    exclude: Container[str] = []
+    exclude: List[str] = []
 ) -> BaseModel:
     mapper = inspect(db_model)
     fields = {}
