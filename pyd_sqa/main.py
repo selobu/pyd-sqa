@@ -15,10 +15,11 @@ def pyd_sqa(
     mapper = inspect(db_model)
     fields = {}
     for attr in mapper.attrs:
-        if not isinstance(attr, ColumnProperty) or not attr.columns:
-            continue
-        name = attr.key
-        if name in exclude:
+        if (
+            not isinstance(attr, ColumnProperty)
+            or not attr.columns
+            or (name := attr.key) in exclude
+        ):
             continue
         column = attr.columns[0]
         python_type = None
