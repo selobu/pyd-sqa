@@ -83,16 +83,16 @@ db.commit()
 
 def test_pyd_sqa():
     user = db.query(User).first()
-    pydantic_user = PydanticUser.from_orm(user)
-    data = pydantic_user.dict()
+    pydantic_user = PydanticUser.model_validate(user)
+    data = pydantic_user.model_dump()
     assert data == {
         "fullname": "Ed Jones",
         "id": 1,
         "name": "ed",
         "nickname": "edsnickname",
     }
-    pydantic_user_with_addresses = PydanticUserWithAddresses.from_orm(user)
-    data = pydantic_user_with_addresses.dict()
+    pydantic_user_with_addresses = PydanticUserWithAddresses.model_validate(user)
+    data = pydantic_user_with_addresses.model_dump()
     assert data == {
         "fullname": "Ed Jones",
         "id": 1,
