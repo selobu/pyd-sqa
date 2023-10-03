@@ -1,14 +1,15 @@
 # pyd-sqa
+
 Pydantic-SQLAlchemy
 
-<a href="https://github.com/selobu/sqlalchemy-pydantic/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/seloby/sqlalchemy-pydantic/workflows/Test/badge.svg" alt="Test">
+<a href="https://github.com/selobu/pyd-sqa/actions?query=workflow%3ATest" target="_blank">
+    <img src="https://github.com/selobu/pyd-sqa/workflows/Test/badge.svg" alt="Test">
 </a>
 <a href="https://github.com/selobu/pyd-sqa/actions?query=workflow%3APublish" target="_blank">
-    <img src="https://github.com/selobu/sqlalchemy-pydantic/workflows/Publish/badge.svg" alt="Publish">
+    <img src="https://github.com/selobu/pyd-sqa/workflows/Publish/badge.svg" alt="Publish">
 </a>
 <a href="https://codecov.io/gh/selobu/sqlalchemy-pydantic" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/selobu/sqlalchemy-pydantic?color=%2334D058" alt="Coverage">
+    <img src="https://img.shields.io/codecov/c/github/selobu/pyd-sqa?color=%2334D058" alt="Coverage">
 </a>
 <a href="https://pypi.org/selobu/pyd-sqa" target="_blank">
     <img src="https://img.shields.io/pypi/v/pyd-sqa?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -16,7 +17,6 @@ Pydantic-SQLAlchemy
 
 Tools to generate Pydantic models from SQLAlchemy models, forked from pydantic-sqlalchemy
 
-Still experimental.
 
 ## How to use
 
